@@ -49,6 +49,10 @@ There are many other options you can enable and edit in this file. For more info
 
 `$ ./docker-cas/run.sh`
 
+You can also add the optional params for the HTTP & HTTPS ports(Default ports are 8000 and 8500 respectively.):
+
+`$ ./docker-cas/run.sh 8080 8443`
+
 This will start your CAS server container. To view the log run(`Ctrl+C` to exit):
 
 `docker logs -f common-auth-cas`
