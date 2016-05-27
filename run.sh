@@ -25,6 +25,7 @@ if ["$(docker ps -a | grep common-auth-cas)" = ""]; then
 	-p 8000:8080 \
 	-p 8500:8443 \
 	-v $DIR/runtime/webapps:/usr/local/tomcat7/webapps \
+	-v $DIR/runtime/create_keystore:/runtime/create_keystore \
 	-v $DIR/runtime/server.xml:/usr/local/tomcat7/conf/server.xml \
 	-v $DIR/runtime/pac4jContext.xml:/usr/local/tomcat7/webapps/cas/WEB-INF/spring-configuration/pac4jContext.xml \
 	-v $DIR/runtime/cas.properties:/usr/local/tomcat7/webapps/cas/WEB-INF/cas.properties \
