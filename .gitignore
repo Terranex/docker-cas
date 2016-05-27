@@ -1,0 +1,6 @@
+#Exclude maven repository,target and webapps directories and war files
+*/repository/
+*/target/
+*/cas/
+*/webapps/*
+*.war
