@@ -11,7 +11,7 @@ if [ "$http_port" = "" ]; then
 fi
 
 if [ "$https_port" = "" ]; then
-        http_port=8500
+        https_port=8500
 fi
 
 if [ "$(ls -al  runtime/webapps/ | grep 'cas$')" = "" ]; then
