@@ -44,6 +44,8 @@
         <!--Google-->
         <property name="clientID" value="my_id" />
         <property name="secret" value="my_secret" />
+	<!--<property name="preferredJwsAlgorithm" value="RS256" />
+        <property name="useNonce" value="true" />-->
         <property name="discoveryURI" value="https://accounts.google.com/.well-known/openid-configuration" />
     </bean>
 </beans>
